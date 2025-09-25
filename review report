@@ -1,0 +1,21 @@
+5. Review the report for vulnerabilities and severity
+
+1)The host scanned is 127.0.0.1 (localhost).
+
+2)Severity level is marked Medium (CVSS 5.9).
+
+3)Affected service: PostgreSQL (commonly runs on port 5432) with TLS/SSL enabled.
+
+4)Vulnerability type: Weak SSL/TLS cipher suite accepted.
+
+5)Cipher identified: TLS_RSA_WITH_SEED_CBC_SHA.
+
+6)This cipher is outdated and considered weak by modern cryptographic standards.
+
+7)Impact: attackers may decrypt or intercept sensitive communication.
+
+8)Report links weakness to CVEs like CVE-2013-2566, CVE-2015-2808, CVE-2015-4000.
+
+9)The issue affects any service relying on encrypted communication using weak ciphers.
+
+10) The report recommends disabling weak cipher suites in server configuration.
